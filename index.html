@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Text background - traversy media</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Charm">
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #000;
+      color: #fff;
+
+    }
+
+    .container {
+      outline: 1px solid #fff;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: url('https://i.ibb.co/1sQXJ4z/page-bg.png') no-repeat center center/cover;
+    }
+
+    .animated {
+      font-family: 'Charm', cursive;
+      font-size: 4rem;
+      word-wrap: normal;
+      background: url('https://i.ibb.co/89Cf3dm/text-bg.png') no-repeat;
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      -webkit-animation: moveBg 60s linear infinite;
+      -o-animation: moveBg 60s linear infinite;
+      -moz-animation: moveBg 60s linear infinite;
+      animation: moveBg 60s linear infinite;
+    }
+
+    @keyframes moveBg {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      100% {
+        background-position: 100% 0%;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="container">
+    <p class="animated">Merry Christmas</p>
+    <p><img src="https://i.ibb.co/8D6XK4m/logo.png" alt="Traversy Media "></p>
+  </div>
+</body>
+
+</html>
